@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bentaher.youssefbentaher_pset5.Main2Activity">
+
+    <EditText
+        android:id="@+id/taakNaam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Pas naam aan"/>
+
+    <EditText
+        android:id="@+id/taakBeschrijving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Pas beschrijving aan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/updaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aanpassen"/>
+
+        <Button
+            android:id="@+id/deleten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verwijderen"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/lijsttaak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="naam"/>
+
+            <EditText
+                android:id="@+id/lijstbeschrijving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="beschrijving"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lijsttoevoegen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toevoegen"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textBeschrijving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="textje"
+        />
+
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
