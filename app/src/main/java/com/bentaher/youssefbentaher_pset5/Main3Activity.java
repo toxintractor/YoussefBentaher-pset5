@@ -99,6 +99,7 @@ public class Main3Activity extends AppCompatActivity {
         Intent jumppage = new Intent(Main3Activity.this, Main2Activity.class);
         startActivity(jumppage);
 
+
     }
 
 
