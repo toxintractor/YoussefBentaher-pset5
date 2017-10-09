@@ -110,7 +110,8 @@ public class TaakManager {
     public ArrayList<Lijst> getAllDataList(int checkid){
         open();
         ArrayList<Lijst> lijsten = new ArrayList<>();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + DBHelper.TABLE_LIST, null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + DBHelper.TABLE_LIST  + " where " + DBHelper.TAAK_ID + " = "
+                + checkid, null);
 
         if(cursor.moveToFirst()){
             do{

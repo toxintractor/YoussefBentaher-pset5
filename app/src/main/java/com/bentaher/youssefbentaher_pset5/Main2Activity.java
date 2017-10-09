@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,6 +35,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         //db = DBHelper.getInstance(this);
         db = new TaakManager(this);
@@ -85,8 +87,8 @@ public class Main2Activity extends AppCompatActivity {
             lstbeschrijving.setText("");
             Log.i("check", String.valueOf(check));
             //db.open();
-            //taakArray = db.getAllData();
-            //setAdapter();
+            taakArray = db.getAllDataList(taakObject.getID());
+            setAdapter();
         }
     }
 
