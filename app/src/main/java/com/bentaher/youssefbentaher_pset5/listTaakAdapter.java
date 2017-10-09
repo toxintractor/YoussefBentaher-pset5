@@ -105,7 +105,7 @@ public class listTaakAdapter extends ArrayAdapter {
         public void onClick(View view) {
             db.open();
             //Toast.makeText(context, tk1, Toast.LENGTH_SHORT).show();
-            Intent jumppage = new Intent(context, Main2Activity.class);
+            Intent jumppage = new Intent(context, Main3Activity.class);
             jumppage.putExtra("data", tk1);
             context.startActivity(jumppage);
 

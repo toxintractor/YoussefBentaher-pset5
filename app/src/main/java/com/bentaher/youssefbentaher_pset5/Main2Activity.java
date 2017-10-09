@@ -64,7 +64,7 @@ public class Main2Activity extends AppCompatActivity {
 
         for (Lijst ding: taakArray
              ) {
-            Log.i("check", String.valueOf(ding.getTaakID()));
+            //Log.i("check", String.valueOf(ding.getTaakID()));
         }
 
         setAdapter();

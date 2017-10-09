@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.bentaher.youssefbentaher_pset5.Main2Activity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/taakNaam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Pas lijst naam aan"/>
+
+        <EditText
+            android:id="@+id/taakBeschrijving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Pas beschrijving aan"/>
+
+        <Button
+            android:id="@+id/updaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aanpassen"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/deleten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verwijderen"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lijsttaak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Taak toevoegen"/>
+
+        <EditText
+            android:id="@+id/lijstbeschrijving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Taak beschrijving"/>
+
+        <Button
+            android:id="@+id/lijsttoevoegen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toevoegen"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textBeschrijving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="textje"
+            />
+
+        <ListView
+            android:id="@+id/lstView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

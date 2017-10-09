@@ -86,6 +86,7 @@ public class TaakManager {
     public void delete(Taak taak){
         open();
         db.delete(DBHelper.TABLE_NAME, " " + DBHelper.KEY_ID + " =  ? ", new String[] {String.valueOf(taak.getID())});
+        db.delete(DBHelper.TABLE_LIST, " " + DBHelper.TAAK_ID + " =  ? ", new String[] {String.valueOf(taak.getID())});
         db.close();
     }
 

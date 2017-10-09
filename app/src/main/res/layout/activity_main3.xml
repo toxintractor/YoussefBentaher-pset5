@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.bentaher.youssefbentaher_pset5.Main3Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/taakNm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Pas naam aan"/>
+
+    <EditText
+        android:id="@+id/taakBng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Pas beschrijving aan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/updt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aanpassen"/>
+
+        <Button
+            android:id="@+id/delt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verwijderen"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textBng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="textje"
+        />
+
+</LinearLayout>
